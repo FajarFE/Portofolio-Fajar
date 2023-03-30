@@ -84,7 +84,7 @@ const Experience = () => {
   }
   return (
     <>
-    <div className="justify-center flex flex-col pt-[65px]">
+    <div className="justify-center flex flex-col pt-[69px]">
     <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText2} text-center text-[#A3F7BF]`}>
           What I have done so far
