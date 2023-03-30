@@ -13,11 +13,11 @@ const Footer = () =>{
             <div className="my-2 items-center flex justify-between">
             <div className="sm:block ">
                     <div className="flex lg:space-x-8 md:space-x-1  text-center">
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[5px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Home</a>
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[5px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">About</a>
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[5px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Skill</a>
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[5px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Timeline</a>
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[5px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Portofolio</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Home</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">About</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Skill</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Timeline</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-sm font-md hover:font-bold xs:py-1">Portofolio</a>
                     </div>
                 </div>
             </div>
