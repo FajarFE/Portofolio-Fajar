@@ -84,12 +84,12 @@ const Navbar = () => {
                 </div>
                     
                 <div className="hidden sm:ml-6 sm:block ">
-                    <div className="flex lg:space-x-8 md:space-x-1 text-center">
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Home</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">About</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Skill</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Timeline</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Portofolio</a>
+                    <div className="flex lg:space-x-8 md:space-x-1 text-center ">
+                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold ">Home</a>
+                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">About</a>
+                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Skill</a>
+                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Timeline</a>
+                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Portofolio</a>
                     </div>
                     
                 </div>
@@ -99,15 +99,16 @@ const Navbar = () => {
                 
                 </div>
             </div>
-            <div className={`sm:hidden ${showMenu?"active" : "inactive"}`}>
+            <div className={`sm:hidden backdrop-blur-sm ${showMenu?"active" : "inactive"}`}>
     <div className={`space-y-1 px-2 pt-2 pb-3`}>
-      <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Dashboard</a>
+      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
 
-      <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
 
-      <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Skill</a>
 
-      <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timline</a>
+      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
     </div>
   </div>
             </div>

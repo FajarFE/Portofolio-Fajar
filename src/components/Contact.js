@@ -53,7 +53,7 @@ const Contact =()=>{
         </div>
         <div className=" grid grid-cols-2 gap-4 justify-center container mx-auto items-center content-center h-96">
         <h1 className={`${styles.heroSubText} text-center items-center text-[#A3F7BF] `}>
-        You have an amazing project?
+        You have an amazing project?<br />
         <span className={`${styles.sectionHeadText}`}>
         let’s work together
             </span>

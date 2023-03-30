@@ -1,17 +1,19 @@
 import React from "react";
 import colors from "tailwindcss/colors";
 import { photoshop,html,javascript,reactjs,header,instagram,facebook,twitter,linkedin,tailwind } from "../assets/index";
+import { styles } from "../styles";
+
 
 
 
 const Hero =()=>{
     return(
-        <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20">
-            <div className="flex grid grid-cols-2  content-center ">
-                <div className="py-20">
-                <h5 className="text-5xl sm:text-1xl font-bold leading-tight text-white">I’m Fajar Fernandi A<br/>
+        <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20 ">
+            <div className="flex grid grid-cols-2  content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
+                <div className="lg:py-20 items-center ">
+                <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
                 <span className="text-[#A3F7BF]">Programer</span> In <br/>Indonesia</h5>
-                <div className="flex justify-start my-4 items-center ">
+                <div className="flex justify-center lg:justify-start my-4 items-center ">
                       <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] ">Hire Me</a>
                       <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={facebook} alt="" style={{height:"25px",color:"white"}} /></a>
                       <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={twitter} alt="" style={{height:"25px",color:"white"}} /></a>

@@ -17,9 +17,9 @@ const DetailedSkillCard = ({ selectedSkill }) => {
   });
   return (
     <>
-      <div className="container flex overflow-hidden md:container pt-[90px] justify-center">
+      <div className="container flex pt-[90px] justify-center">
         {skill && (
-          <div className=" rounded-md px-3 text-base font-medium w-[55%] mx-auto h-200 flex flex-col items-center gap-10">
+          <div className=" rounded-md px-3 text-base font-medium w-full lg:w-[50%] mx-auto h-200 flex flex-col items-center gap-10">
             <Tilt className="tilt" options={{ max: 25 }}>
               <div className="bg-[#A3F7BF] h-10 w-72 items-center content-center justify-center flex rounded-[20px]">
                 <h2 className="text-[#1B2430] text-[20px] font-bold">
@@ -37,9 +37,9 @@ const DetailedSkillCard = ({ selectedSkill }) => {
                   <img className="p-1" src={skill.logos[index]}alt=""/>
                   </div>
                   </Tilt>
-                  <span className="w-[30%] text-white font-bold">{name}</span>
+                  <h1 className="w-[30%] text-white font-bold">{name}</h1>
                   <div className="w-1/2 relative h-4">
-                    <div className="absolute top-0 -left-20 h-full w-full bg-[#74b48a] rounded-full">
+                    <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
                       <animated.span
                         className="absolute top-0 left-0 h-full bg-[#A3F7BF] rounded-full"
                         style={progressStyles}
@@ -49,7 +49,7 @@ const DetailedSkillCard = ({ selectedSkill }) => {
                     
                   </div>
                   <div>
-                    <p className="text-[#A3F7BF]">{skill.percent[index]}%</p>
+                    <p className="text-[#A3F7BF] mx-5 ">{skill.percent[index]}%</p>
                   </div>
                 </div>
               ))}
@@ -70,7 +70,7 @@ const DetailedSkillCard = ({ selectedSkill }) => {
 const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
     return (
       <>
-        <div className="flex items-center justify-center p-4 backdrop-blur-sm ">
+        <div className="flex items-center justify-center p-4 backdrop-blur-sm pb-20 ">
           <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
             <div>
               <h2 className="text-[#A3F7BF] text-[20px] font-bold">
@@ -79,18 +79,17 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
               <div className="relative flex justify-between items-center">
                 <div
                   className="flex logos-skill p-20 absolute"
-                  style={{ marginLeft: "-60px" }}
+                  style={{ marginLeft: "-35px" }}
                 >
                   {skill.logos.map((logo, logoIndex) => (
                     <a href="" className="transition duration-150 ease-in-out">
                       <img
-                        className="z-1 mr-2 border-2 border-[#A3F7BF]-600  bg-white rounded-full absolute"
+                        className="z-1 mr-2 border-4 border-[#1B2430]  bg-white rounded-full absolute"
                         style={{
                           zIndex: index + logoIndex + 1,
                           height: "auto",
                           maxWidth: "35%",
                           maxHeight: "35%",
-                          objectFit: "contain",
                           left: `${logoIndex * 35 - 20}px`,
                         }}
                         key={logoIndex}
@@ -108,6 +107,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                     </a>
                   ))}
                 </div>
+                <div className="-">
                 {isSelected ? (
                   <button
                   className={`absolute flex items-center rounded-full justify-center ${
@@ -116,7 +116,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                   style={{
                     height: "40px",
                     width: "40px",
-                    left: "240px",
+                    left: "200px",
                     top: "30px",
                   }}
                   onClick={() => onSelectSkill(skill)}>
@@ -134,8 +134,6 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                           >
                             <path 
                               d="m187.11 39.29 10.542 10.451 0.05919 0.054213c0.18015 0.17864 0.27715 0.4085 0.29101 0.64231v0.12355c-0.013857 0.2338-0.11086 0.46367-0.29101 0.64231l-0.051894 0.043897-10.549 10.462c-0.39032 0.38705-1.0231 0.38705-1.4135 0-0.39032-0.38705-0.39032-1.0146 0-1.4016l9.0081-8.9342-31.703 7.795e-4c-0.55199 0-0.99947-0.44373-0.99947-0.9911s0.44748-0.9911 0.99947-0.9911l31.468-7.794e-4 -8.7732-8.6997c-0.39032-0.38705-0.39032-1.0146 0-1.4016 0.39032-0.38705 1.0231-0.38705 1.4135 0zm10.007 11.092-10.714 10.626 10.601-10.509 1.01e-4 -0.0038327-0.05911-0.053787-0.060405-0.059892h0.23262z"
-
-
                             ></path>
                           </g>
                         </g>
@@ -151,7 +149,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                     style={{
                       height: "40px",
                       width: "40px",
-                      left: "240px",
+                      left: "220px",
                       top: "30px",
                     }}
                     onClick={() => onSelectSkill(skill)}>
@@ -179,6 +177,8 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
 
                   </button>
                 )}
+                </div>
+               
               </div>
             </div>
           </motion.div>
@@ -201,13 +201,13 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
   
     return (
       <>
-        <div className="pt-10">
+        <div>
           <motion.div variants={textVariant()}>
-            <h1 className={`${styles.sectionHeadText1} text-center pb-10`}>
+            <h1 className={`${styles.sectionHeadText1} text-center pb-5`}>
               Some of my skills <br /> and expertise
             </h1>
           </motion.div>
-          <div className="container w-auto grid grid-cols-3 ">
+          <div className="container w-auto lg:grid lg:grid-cols-3 sm:flex sm:flex-col ">
             {Skills.map((skill, index) => (
               <SkillCard
                 key={`skill-${index}`}
