@@ -8,7 +8,7 @@ import { styles } from "../styles";
 
 const Hero =()=>{
     return(
-        <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-10 ">
+        <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20 ">
             <div className="flex grid grid-cols-2 content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
                 <div className="sm:px-2 px-2 py-20 items-center xs:text-[20]">
                 <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
