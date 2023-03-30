@@ -32,6 +32,9 @@ const ContactCard = () => {
                         <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700"> Send Messenger </span>
                         <textarea rows="4" className="mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 w-full rounded-md sm:text-sm focus:ring-1" placeholder="Enter your text here"></textarea>
                     </label>
+                    <button className="w-full h-[45px] my-4 bg-[#A3F7BF] rounded-md">
+                        Send
+                    </button>
                 </form>
             </div>
         </>
@@ -47,9 +50,9 @@ const Contact =()=>{
         <span className={`${styles.sectionHeadText4}`}>You've come to the right person</span> 
         </h5>
         <div className="flex justify-center py-10">
-            <button className="bg-[#A3F7BF] w-32 h-12 text-[20px] text-[#1B2430]">Hire Me</button>
+            <button className="bg-[#A3F7BF] w-32 h-12 text-[15px] lg:text-md md:text-[20px] text-[#1B2430] rounded-md">Hire Me</button>
             <a href="#" className="items-center flex">
-            <h1 className="flex text-[17px] lg:text-sm md:text-sm text-[#A3F7BF] text-center  ml-20 ">
+            <h1 className="flex text-[15px] lg:text-md md:text-[20px] text-[#A3F7BF] text-center  ml-20 ">
                 Let's Talk
             </h1>
             </a>
