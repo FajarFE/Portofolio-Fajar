@@ -14,7 +14,7 @@ const Hero =()=>{
                 <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
                 <span className="text-[#A3F7BF]">Programer</span> In <br/>Indonesia</h5>
                 <div className="flex justify-center lg:justify-start my-4 items-center ">
-                      <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] rounded-md ">Hire Me</a>
+                      <a href="#contact" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] rounded-md ">Hire Me</a>
                       <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={facebook} alt="" style={{height:"25px",color:"white"}} /></a>
                       <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={twitter} alt="" style={{height:"25px",color:"white"}} /></a>
                       <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={instagram} alt="" style={{height:"25px",color:"white"}} /></a>
