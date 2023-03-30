@@ -25,7 +25,7 @@ const Footer = () =>{
             
            <div className="flex container justify-between py-4 border-[#333e4d] border-t-2">
             <div className="flex container justify-start items-center">
-            <p className="text-white text-sm xs:text-[8px]">
+            <p className="text-white text-[8px] xs:text-[8px] sm:text-[8px] lg:text-sm">
             © 2023 Create By Fajar Fernandi.
             </p>
             </div>
