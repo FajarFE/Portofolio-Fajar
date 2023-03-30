@@ -84,31 +84,33 @@ const Experience = () => {
   }
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center text-[#A3F7BF]`}>
+    <div className="justify-center flex flex-col">
+    <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText2} text-center text-[#A3F7BF]`}>
           What I have done so far
         </p>
-        <div className="py-10">
+        <div className="py-2">
         {showTimeline1 &&(
-          <h2 className={`${styles.sectionHeadText} text-center`}>
+          <h2 className={`${styles.sectionHeadText2} text-center`}>
           My Journey To This Career
         </h2>
         )}
         {showTimeline2 &&(
-          <h2 className={`${styles.sectionHeadText} text-center`}>
+          <h2 className={`${styles.sectionHeadText2} text-center`}>
           Work Experience.
         </h2>
         )}
-        </div>
-        
-        <div className="grid justify-items-center pt-8">
-      <div>
-      <button className={`mx-2 p-2 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
+         <div className="flex justify-center pt-8">
+      <button className={`mx-1 p-1 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
       Experience
       </button>
-      <button className={`mx-2 p-2 rounded-none ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
+      <button className={`mx-1 p-1 rounded-none ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
       My Journey
       </button>
+      <div>
+        </div>
+     
+      
       </div>    
       </div>
       </motion.div>
@@ -139,6 +141,8 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
       )}
+    </div>
+     
       
       
     </>

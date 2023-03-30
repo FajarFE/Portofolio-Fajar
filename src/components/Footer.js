@@ -11,13 +11,13 @@ const Footer = () =>{
                     <h1 className="lg:text-1xl sm:text-2xl tracking-wider ">FAJAR</h1></div>
                 </div>
             <div className="my-2 items-center flex justify-between">
-            <div className=" sm:ml-6 sm:block ">
-                    <div className="flex lg:space-x-8 md:space-x-1 text-center">
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Home</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">About</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Skill</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Timeline</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Portofolio</a>
+            <div className="sm:block ">
+                    <div className="flex lg:space-x-8 md:space-x-1  text-center">
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-sm sm:text-[5px] font-md hover:font-bold xs:py-1">Home</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-sm sm:text-[5px] font-md hover:font-bold xs:py-1">About</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-sm sm:text-[5px] font-md hover:font-bold xs:py-1">Skill</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-sm sm:text-[5px] font-md hover:font-bold xs:py-1">Timeline</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-sm sm:text-[5px] font-md hover:font-bold xs:py-1">Portofolio</a>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ const Footer = () =>{
             
            <div className="flex container justify-between py-4 border-[#333e4d] border-t-2">
             <div className="flex container justify-start items-center">
-            <p className="text-white text-sm">
+            <p className="text-white text-sm xs:text-xs">
             © 2023 Create By Fajar Fernandi.
             </p>
             </div>

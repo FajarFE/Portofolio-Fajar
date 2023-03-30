@@ -11,7 +11,7 @@ const Hero =()=>{
         <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20 ">
             <div className="flex grid grid-cols-2  content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
                 <div className="lg:py-20 items-center xs:text-[20]">
-                <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
+                <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText} sm:${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
                 <span className="text-[#A3F7BF]">Programer</span> In <br/>Indonesia</h5>
                 <div className="flex justify-center lg:justify-start my-4 items-center ">
                       <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] ">Hire Me</a>
