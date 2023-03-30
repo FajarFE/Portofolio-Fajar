@@ -42,14 +42,18 @@ const ContactCard = () => {
 const Contact =()=>{
     return(<>
      <div className="justify-center content-start container mx-auto pt-10 pb-32">
-        <h5 className={`${styles.heroSubText} text-center text-[50px !important]`}>
-        Are you looking for a programmer or designer? <br /> You've come to the right person
+        <h5 className={`${styles.heroSubText} text-center`}>
+        Are you looking for a programmer or designer? <br />
+        <span className={`${styles.sectionHeadText4}`}>You've come to the right person</span> 
         </h5>
         <div className="flex justify-center py-10">
             <button className="bg-[#A3F7BF] w-32 h-12 text-[20px] text-[#1B2430]">Hire Me</button>
-            <h1 className="flex text-[20px] text-[#A3F7BF] text-center items-center ml-20 ">
+            <a href="#" className="items-center flex">
+            <h1 className="flex text-[17px] lg:text-sm md:text-sm text-[#A3F7BF] text-center  ml-20 ">
                 Let's Talk
             </h1>
+            </a>
+            
         </div>
         <div className=" grid grid-cols-2 gap-4 justify-center container mx-auto items-center content-center h-96">
         <h1 className={`${styles.heroSubText} text-center items-center text-[#A3F7BF] `}>
