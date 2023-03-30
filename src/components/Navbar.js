@@ -85,30 +85,30 @@ const Navbar = () => {
                     
                 <div className="hidden sm:ml-6 sm:block ">
                     <div className="flex lg:space-x-8 md:space-x-1 text-center ">
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold ">Home</a>
+                    <a href="/" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold ">Home</a>
                     <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">About</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Skill</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Timeline</a>
-                    <a href="#" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Portofolio</a>
+                    <a href="#skill" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Skill</a>
+                    <a href="#timeline" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Timeline</a>
+                    <a href="#portofolio" className="text-white  hover:text-white px-3 py-2 text-base font-md hover:font-bold">Portofolio</a>
                     </div>
                     
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 sm:px-2.5 sm:py-1.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF]">Contact Me</a>
+                <a href="#contact" class="bg-[#A3F7BF]  py-3 px-4 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] rounded-md">Contact Me</a>
                 </div>
                 
                 </div>
             </div>
             <div className={`sm:hidden backdrop-blur-sm ${showMenu?"active" : "inactive"}`}>
     <div className={`space-y-1 px-2 pt-2 pb-3`}>
-      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
+      <a href="/" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
 
       <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
 
-      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Skill</a>
+      <a href="#skill" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Skill</a>
 
-      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timline</a>
-      <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
+      <a href="#timeline" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timeline</a>
+      <a href="#portofolio" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
     </div>
   </div>
             </div>

@@ -39,9 +39,9 @@ const MyPortfolio = () => {
   };
 
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto pt-14">
       <h1 className={`${styles.sectionHeadText} text-center`}>My Portfolio</h1>
-      <div className="flex space-x-4 mb-2 justify-center py-4">
+      <div className="flex space-x-4 my-10 justify-center ">
         <button
           className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
             selectedTags.includes("Front End")
@@ -73,9 +73,9 @@ const MyPortfolio = () => {
           Graphic Design
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
         {filteredPortfolio.map((project) => (
-          <div key={project.id} className="p-4 rounded-[20px]">
+          <div key={project.id} className="p-2.5 rounded-[20px]">
             <Tilt
               className="tilt"
               options={{
@@ -191,4 +191,4 @@ leaveTo="opacity-0"
 );
 };
 
-export default MyPortfolio;
+export default SectionWrapper(MyPortfolio,"portofolio")

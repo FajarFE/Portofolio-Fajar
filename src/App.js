@@ -6,6 +6,7 @@ import SkillsPage from './components/Skill';
 import MyPortfolio from './components/MyPortofolio.js';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 
 function App() {

@@ -84,12 +84,12 @@ const Experience = () => {
   }
   return (
     <>
-    <div className=" justify-center flex flex-col">
+    <div className="justify-center flex flex-col pt-[65px]">
     <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText2} text-center text-[#A3F7BF]`}>
           What I have done so far
         </p>
-        <div className="py-2">
+        <div className="">
         {showTimeline1 &&(
           <h2 className={`${styles.sectionHeadText2} text-center`}>
           My Journey To This Career
@@ -101,10 +101,10 @@ const Experience = () => {
         </h2>
         )}
          <div className="flex justify-center pt-8">
-      <button className={`mx-1 p-1 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
+      <button className={`mx-4 p-1 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
       Experience
       </button>
-      <button className={`mx-1 p-1 rounded-none ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
+      <button className={`mx-4 p-1 rounded-none ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
       My Journey
       </button>
       <div>
@@ -118,7 +118,7 @@ const Experience = () => {
       
       
    __      {showTimeline1 &&(
-        <div className='overflow-hidden mt-10 flex flex-col'>
+        <div className='mt-5 flex flex-col'>
         <VerticalTimeline lineColor={'transparent'}>
           {timelines.map((timeline, index) => (
             <TimelinesCard
@@ -130,7 +130,7 @@ const Experience = () => {
       </div>
       )}
       {showTimeline2 &&(
-        <div className='overflow-hidden mt-10 flex flex-col'>
+        <div className='mt-5 flex flex-col'>
         <VerticalTimeline lineColor={'transparent'}>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -149,4 +149,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "timeline");

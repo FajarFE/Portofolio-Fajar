@@ -201,7 +201,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
   
     return (
       <>
-        <div>
+        <div className="pt-[65px]">
           <motion.div variants={textVariant()}>
             <h1 className={`${styles.sectionHeadText1} text-center pb-5`}>
               Some of my skills <br /> and expertise
@@ -227,4 +227,4 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
   };
   
 
-export default SectionWrapper(Skill,"work")
+export default SectionWrapper(Skill,"skill")
