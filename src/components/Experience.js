@@ -88,6 +88,7 @@ const Experience = () => {
         <p className={`${styles.sectionSubText} text-center text-[#A3F7BF]`}>
           What I have done so far
         </p>
+        <div className="py-10">
         {showTimeline1 &&(
           <h2 className={`${styles.sectionHeadText} text-center`}>
           My Journey To This Career
@@ -98,6 +99,8 @@ const Experience = () => {
           Work Experience.
         </h2>
         )}
+        </div>
+        
         <div className="grid justify-items-center pt-8">
       <div>
       <button className={`mx-2 p-2 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>

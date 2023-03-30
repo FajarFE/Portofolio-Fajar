@@ -2,8 +2,8 @@ import { logo,instagram,facebook,twitter,linkedin,tailwind } from "../assets"
 
 const Footer = () =>{
     return (
-        <footer className=" mx-auto container flex flex-col  h-20 items-center mb-5">
-            <div className="flex container justify-between">
+        <footer className=" mx-auto container flex flex-col  h-20 items-center mb-5 p-5">
+            <div className="flex container justify-between p-5">
             <div className="items-center text-white font-bold text-center">
                 <div className="flex flex-shrink-0 items-center text-center">
                     <img className="block h-12 w-auto lg:hidden" src={logo} alt="Your Company"/>
@@ -11,7 +11,7 @@ const Footer = () =>{
                     <h1 className="lg:text-1xl sm:text-2xl tracking-wider ">FAJAR</h1></div>
                 </div>
             <div className="my-2 items-center flex justify-between">
-            <div className="hidden sm:ml-6 sm:block ">
+            <div className=" sm:ml-6 sm:block ">
                     <div className="flex lg:space-x-8 md:space-x-1 text-center">
                     <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">Home</a>
                     <a href="#" className="text-white  hover:text-white px-3 py-2 text-sm font-md hover:font-bold">About</a>
