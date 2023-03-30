@@ -94,7 +94,7 @@ const Navbar = () => {
                     
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF]">Contact Me</a>
+                <a href="#" class="bg-[#A3F7BF] px-3.5 py-2.5 sm:px-2.5 sm:py-1.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF]">Contact Me</a>
                 </div>
                 
                 </div>

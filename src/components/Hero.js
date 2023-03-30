@@ -9,8 +9,8 @@ import { styles } from "../styles";
 const Hero =()=>{
     return(
         <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20 ">
-            <div className="flex grid grid-cols-2 py-10 content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
-                <div className="sm:p-10 py-20 items-center xs:text-[20]">
+            <div className="flex grid grid-cols-2 content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
+                <div className="sm:p-10 p-20 items-center xs:text-[20]">
                 <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
                 <span className="text-[#A3F7BF]">Programer</span> In <br/>Indonesia</h5>
                 <div className="flex justify-center lg:justify-start my-4 items-center ">
