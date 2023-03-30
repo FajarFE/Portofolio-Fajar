@@ -47,18 +47,18 @@ const Contact =()=>{
      <div className="justify-center content-start container mx-auto pt-10 pb-32">
         <h5 className={`${styles.heroSubText} text-center`}>
         Are you looking for a programmer or designer? <br />
-        <span className={`${styles.sectionHeadText4}`}>You've come to the right person</span> 
+        <span className="text-[#A3F7BF]">You've come to the right person</span> 
         </h5>
         <div className="flex justify-center py-10">
-            <button className="bg-[#A3F7BF] w-32 h-12 text-[15px] lg:text-md md:text-[20px] text-[#1B2430] rounded-md">Hire Me</button>
+            <button className="bg-[#A3F7BF] w-32 h-12 text-[15px] lg:text-md md:text-[20px] text-[#1B2430] rounded-md mx-5">Hire Me</button>
             <a href="#" className="items-center flex">
-            <h1 className="flex text-[15px] lg:text-md md:text-[20px] text-[#A3F7BF] text-center  ml-20 ">
+            <h1 className="flex text-[15px] lg:text-md md:text-[20px] text-[#A3F7BF] text-center mx-5 ">
                 Let's Talk
             </h1>
             </a>
             
         </div>
-        <div className=" grid grid-cols-2 gap-4 justify-center container mx-auto items-center content-center h-96">
+        <div className=" grid grid-cols-2 gap-4 justify-center container mx-auto items-center content-center h-96 py-20">
         <h1 className={`${styles.heroSubText} text-center items-center text-[#A3F7BF] `}>
         You have an amazing project?<br />
         <span className={`${styles.sectionHeadText4} `}>
