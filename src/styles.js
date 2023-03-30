@@ -18,7 +18,7 @@ const styles = {
     "text-white font-black md:text-[40px] sm:text-[20px] xs:text-[10px] text-[20px]",
     sectionHeadText3:
     "text-white font-black md:text-[60px] sm:text-[20px] xs:text-[40px] text-[20px]",
-    sectionHeadText:
+    sectionHeadText4:
     "text-[#A3F7BF] font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
     
 };
