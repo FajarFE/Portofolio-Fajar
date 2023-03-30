@@ -41,9 +41,9 @@ const MyPortfolio = () => {
   return (
     <div className="container mx-auto py-8">
       <h1 className={`${styles.sectionHeadText} text-center`}>My Portfolio</h1>
-      <div className="flex space-x-4 mb-8 justify-center py-4">
+      <div className="flex space-x-4 mb-2 justify-center py-4">
         <button
-          className={`border border-[#A3F7BF] rounded text-sm sm:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
             selectedTags.includes("Front End")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
@@ -53,7 +53,7 @@ const MyPortfolio = () => {
           Front End
         </button>
         <button
-          className={`border border-[#A3F7BF] rounded text-sm sm:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
             selectedTags.includes("Back End")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
@@ -63,7 +63,7 @@ const MyPortfolio = () => {
           Back End
         </button>
         <button
-          className={`border border-[#A3F7BF] rounded text-sm sm:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
             selectedTags.includes("Graphic Design")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
