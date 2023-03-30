@@ -84,7 +84,7 @@ const Experience = () => {
   }
   return (
     <>
-    <div className="justify-center flex flex-col">
+    <div className="overflow-hidden justify-center flex flex-col">
     <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText2} text-center text-[#A3F7BF]`}>
           What I have done so far
@@ -118,7 +118,7 @@ const Experience = () => {
       
       
    __      {showTimeline1 &&(
-        <div className='mt-20 flex flex-col'>
+        <div className='mt-10 flex flex-col'>
         <VerticalTimeline lineColor={'transparent'}>
           {timelines.map((timeline, index) => (
             <TimelinesCard
@@ -130,7 +130,7 @@ const Experience = () => {
       </div>
       )}
       {showTimeline2 &&(
-        <div className='mt-20 flex flex-col'>
+        <div className='mt-10 flex flex-col'>
         <VerticalTimeline lineColor={'transparent'}>
           {experiences.map((experience, index) => (
             <ExperienceCard
