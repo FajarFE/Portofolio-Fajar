@@ -102,10 +102,10 @@ const Experience = () => {
         </h2>
         )}
          <div className="flex justify-center pt-8">
-      <button className={`mx-4 p-1 rounded-none  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
+      <button className={`mx-4 p-1 rounded-md  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
       Experience
       </button>
-      <button className={`mx-4 p-1 rounded-none ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
+      <button className={`mx-4 p-1 rounded-md ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
       My Journey
       </button>
       <div>

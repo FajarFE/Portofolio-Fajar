@@ -93,7 +93,7 @@ const Navbar = () => {
                     </div>
                     
                 </div>
-                <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div className=" hidden sm:block absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <a href="#contact" class="bg-[#A3F7BF]  py-3 px-4 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] rounded-md">Contact Me</a>
                 </div>
                 
@@ -109,6 +109,7 @@ const Navbar = () => {
 
       <a href="#timeline" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timeline</a>
       <a href="#portofolio" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
+      <a href="#contact" className="px-3 py-2 text-gray-300 bg-[#A3F7BF] text-center"></a>
     </div>
   </div>
             </div>
