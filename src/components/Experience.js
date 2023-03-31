@@ -11,6 +11,7 @@ import { timelines } from "../constant";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { tailwind } from "../assets";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -18,7 +19,7 @@ const ExperienceCard = ({ experience }) => {
       contentStyle={{ background: 'transparent', color: '#fff', }}
       iconStyle={{ background: '#A3F7BF', border: 'none' ,outline:'none'}}
       date={experience.date}
-      icon={<img src={tailwind} alt="" width="40px" height="40px"/>}
+      icon={<FontAwesomeIcon icon={experience.icon} style={{ color: '#1B2430' }} />}
       contentArrowStyle={{ borderRight: '7px solid  transparent' }}
     >
       <div>
@@ -45,7 +46,7 @@ const TimelinesCard = ({ timeline }) => {
       contentStyle={{ background: 'transparent', color: '#fff', }}
       iconStyle={{ background: '#A3F7BF', border: 'none' ,outline:'none'}}
       date={timeline.date}
-      icon={<img src={tailwind} alt="" width="40px" height="40px"/>}
+      icon={<FontAwesomeIcon icon={timeline.icon} style={{ color: '#1B2430' }} />}
       contentArrowStyle={{ borderRight: '7px solid  transparent' }}
     >
       <div>

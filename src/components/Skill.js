@@ -19,7 +19,7 @@ const DetailedSkillCard = ({ selectedSkill }) => {
     <>
       <div className="container flex pt-[90px] justify-center">
         {skill && (
-          <div className=" rounded-md px-3 text-base font-medium w-full lg:w-[50%] mx-auto h-200 flex flex-col items-center gap-10">
+          <div className=" rounded-md px-3 text-base font-medium w-[100%] lg:w-[70%] sm:w-100% md:w-100% mx-auto h-200 flex flex-col items-center gap-10">
             <Tilt className="tilt" options={{ max: 25 }}>
               <div className="bg-[#A3F7BF] h-10 w-72 items-center content-center justify-center flex rounded-[20px]">
                 <h2 className="text-[#1B2430] text-[20px] font-bold">
@@ -28,17 +28,17 @@ const DetailedSkillCard = ({ selectedSkill }) => {
               </div>
             </Tilt>
             
-            <div className="w-full">
+            <div className="w-full ">
               <div>
                  {skill.name.map((name, index,logos) => (
                 <div className="flex items-center mb-2" key={`skill-${index}`}>
                   <Tilt className="tilt" options={{ max: 50 }}>
-                  <div className="w-12 mr-[20px] bg-white rounded-full">
+                  <div className="w-[25px] sm:w-[20px] md:w-[50px] lg:w-[70px] mr-[10px] bg-white rounded-full">
                   <img className="p-1" src={skill.logos[index]}alt=""/>
                   </div>
                   </Tilt>
-                  <h1 className="w-[30%] text-white font-bold">{name}</h1>
-                  <div className="w-1/2 relative h-4">
+                  <h1 className="w-[40%] text-white font-bold text-[16px] sm:text-[10px] md:text-[20px] lg:text-[20px]">{name}</h1>
+                  <div className="w-[60%] relative h-4 px-4">
                     <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
                       <animated.span
                         className="absolute top-0 left-0 h-full bg-[#A3F7BF] rounded-full"
@@ -48,8 +48,8 @@ const DetailedSkillCard = ({ selectedSkill }) => {
                     </div>
                     
                   </div>
-                  <div>
-                    <p className="text-[#A3F7BF] mx-5 ">{skill.percent[index]}%</p>
+                  <div className="">
+                    <p className="text-[#A3F7BF] ml-6 ">{skill.percent[index]}%</p>
                   </div>
                 </div>
               ))}
@@ -76,9 +76,9 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
               <h2 className="text-[#A3F7BF] text-[20px] font-bold">
                 {skill.id} <span className="text-white text-[20px]">{skill.title}</span>
               </h2>
-              <div className="relative flex justify-between items-center">
+              <div className="relative flex justify-between items-center content-center w-full">
                 <div
-                  className="flex logos-skill p-20 absolute"
+                  className="flex logos-skill p-20 absolute "
                   style={{ marginLeft: "-35px" }}
                 >
                   {skill.logos.map((logo, logoIndex) => (
@@ -107,7 +107,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                     </span>
                   ))}
                 </div>
-                <div className="-">
+                <div className="">
                 {isSelected ? (
                   <button
                   className={`absolute flex items-center rounded-full justify-center ${
@@ -116,8 +116,9 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                   style={{
                     height: "40px",
                     width: "40px",
-                    left: "200px",
+                    left: "100%",
                     top: "30px",
+                    
                   }}
                   onClick={() => onSelectSkill(skill)}>
                     <svg 
@@ -143,13 +144,13 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                 </button>
                 ) : (
                   <button
-                    className={`absolute flex items-center rounded-full justify-center ${
+                    className={`absolute flex items-center rounded-full justify-center  ${
                       isSelected ? "" : "icon2"
                     }`}
                     style={{
                       height: "40px",
                       width: "40px",
-                      left: "220px",
+                      left: "100%",
                       top: "30px",
                     }}
                     onClick={() => onSelectSkill(skill)}>

@@ -22,7 +22,12 @@ import {  header,
     coreldraw,
     photoshop,
     portofolio1,} from "../assets/index";
+ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+ import { library } from '@fortawesome/fontawesome-svg-core';
+import { faGraduationCap,faBriefcase } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faGraduationCap,faBriefcase);
 
 
 export const navLink =[
@@ -85,30 +90,22 @@ const Skills = [
     {
       id: "01.",
       title: "Front End Developer",
-      logos: [css, git, html, javascript, reactjs, tailwind],
+      logos: [css, git, html, javascript, reactjs, tailwind,boostrap],
     },
     {
       id: "02.",
       title: "Back End Developer",
-      logos: [express, firebase, laravel, mongodb, mysql, nodejs],
+      logos: [express, laravel, mongodb, mysql, nodejs],
     },
     {
       id: "03.",
       title: "Graphic Design",
-      logos: [figma, photoshop],
+      logos: [figma, photoshop,coreldraw],
     },
   ];
 
   const experiences =[
     {
-        date:"2008-2014",
-        title:"SDN 2 Tertek",
-        description:"Saya menyelesaikan pendidikan dasar di SDN 2 Tertek",
-        points:[]
-        
-
-    },
-    {
         date:"2014-2017",
         title:"SMPN 5 Tulungagung",
         description:"Saya menyelesaikan pendidikan menengah pertama di SMPN 1 Tertek",
@@ -117,28 +114,12 @@ const Skills = [
             "Menjadi anggota Pramuka",
             "Menjadi Koordinasi OSIS bidang Digital",
             "Menjadi Sekertaris Pramuka selama 2 Periode",
-        ]
+        ],
+        icon:faBriefcase,
     }
   ]
 
   const timelines = [
-    {
-        date:"2008-2014",
-        title:"SDN 2 Tertek",
-        description:"Saya menyelesaikan pendidikan dasar di SDN 2 Tertek",
-        points:[]
-    },
-    {
-        date:"2014-2017",
-        title:"SMPN 5 Tulungagung",
-        description:"Saya menyelesaikan pendidikan menengah pertama di SMPN 1 Tertek",
-        points:[
-            "Menjadi anggota OSIS",
-            "Menjadi anggota Pramuka",
-            "Menjadi Koordinasi OSIS bidang Digital",
-            "Menjadi Sekertaris Pramuka selama 2 Periode",
-        ]
-    },
     {
         date:"2017-2020",
         title:"SMAN 1 Karangrejo",
@@ -148,7 +129,8 @@ const Skills = [
             "Menjadi anggota Pramuka",
             "Menjadi Koordinasi OSIS bidang Digital",
             "Menjadi Sekertaris Pramuka selama 2 Periode",
-        ]
+        ],
+        icon:faGraduationCap,
     },
     {
         date:"2020-2021",
@@ -158,7 +140,8 @@ const Skills = [
             "Menjadi Sekertaris Himpunan Mahasiswa Informatika Selama 2 Periode",
             "Pernah Mendapat Juara 2 Lomba Ide Bisnis sebagai Design Prototipe Aplikasi Tingkat Nasional dalam acara Lo-Kreatif 2022",
             "Menggikuti Pelatihan MERN Stack di Genbox",
-        ]
+        ],
+        icon:faGraduationCap,
     }
   ]
 
