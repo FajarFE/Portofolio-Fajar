@@ -13,11 +13,11 @@ const Footer = () =>{
             <div className="my-2 items-center flex justify-between">
             <div className="sm:block ">
                     <div className="flex lg:space-x-8 md:space-x-1  text-center">
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-[18px] font-md hover:font-bold xs:py-1">Home</a>
-                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-[18px] font-md hover:font-bold xs:py-1">About</a>
-                    <a href="#skill" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-[18px] font-md hover:font-bold xs:py-1">Skill</a>
-                    <a href="#timeline" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-[18px] font-md hover:font-bold xs:py-1">Timeline</a>
-                    <a href="#portofolio" className="text-white  hover:text-white px-1 py-2 text-[13px] sm:text-sm md:text-[18px] font-md hover:font-bold xs:py-1">Portofolio</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm font-md hover:font-bold xs:py-1 md:text-sm">Home</a>
+                    <a href="#" className="text-white  hover:text-white px-1 py-2 text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm font-md hover:font-bold xs:py-1 md:text-sm">About</a>
+                    <a href="#skill" className="text-white  hover:text-white px-1 py-2 text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm font-md hover:font-bold xs:py-1 md:text-sm">Skill</a>
+                    <a href="#timeline" className="text-white  hover:text-white px-1 py-2 text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm font-md hover:font-bold xs:py-1 md:text-sm">Timeline</a>
+                    <a href="#portofolio" className="text-white  hover:text-white px-1 py-2 text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm font-md hover:font-bold xs:py-1 md:text-sm">Portofolio</a>
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ const Footer = () =>{
             
            <div className="flex container justify-between py-4 border-[#333e4d] border-t-2">
             <div className="flex container justify-start items-center">
-            <p className="text-white text-[12px] xs:text-[8px] sm:text-[8px] lg:text-sm">
+            <p className="text-white text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm  md:text-sm">
             © 2023 Create By Fajar Fernandi.
             </p>
             </div>

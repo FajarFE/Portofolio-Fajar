@@ -82,7 +82,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                   style={{ marginLeft: "-35px" }}
                 >
                   {skill.logos.map((logo, logoIndex) => (
-                    <a href="" className="transition duration-150 ease-in-out">
+                    <span href="" className="transition duration-150 ease-in-out">
                       <img
                         className="z-1 mr-2 border-4 border-[#1B2430]  bg-white rounded-full absolute"
                         style={{
@@ -104,7 +104,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                           e.currentTarget.style.transform = "scale(1)";
                         }}
                       />
-                    </a>
+                    </span>
                   ))}
                 </div>
                 <div className="-">

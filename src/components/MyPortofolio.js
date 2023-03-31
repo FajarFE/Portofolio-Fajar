@@ -43,7 +43,7 @@ const MyPortfolio = () => {
       <h1 className={`${styles.sectionHeadText} text-center`}>My Portfolio</h1>
       <div className="flex space-x-4 my-10 justify-center ">
         <button
-          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-[10px] xs:text-[5px] sm:text-[5px]  md:text-sm lg:text-sm py-2 px-4 ${
             selectedTags.includes("Front End")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
@@ -53,7 +53,7 @@ const MyPortfolio = () => {
           Front End
         </button>
         <button
-          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm py-2 px-4 md:text-sm ${
             selectedTags.includes("Back End")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
@@ -63,7 +63,7 @@ const MyPortfolio = () => {
           Back End
         </button>
         <button
-          className={`border border-[#A3F7BF] rounded text-sm lg:text-[20px] py-2 px-4 ${
+          className={`border border-[#A3F7BF] rounded text-[10px] xs:text-[5px] sm:text-[5px] lg:text-sm py-1 px-1 md:text-sm ${
             selectedTags.includes("Graphic Design")
               ? "bg-[#A3F7BF] text-[#1B2430]"
               : "text-[#A3F7BF]"
