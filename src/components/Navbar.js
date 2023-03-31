@@ -109,7 +109,7 @@ const Navbar = () => {
 
       <a href="#timeline" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timeline</a>
       <a href="#portofolio" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
-      <a href="#contact" className="mx-3 my-2 w-auto h-5 text-gray-300 bg-[#A3F7BF] text-center"></a>
+      <a href="#contact" className="mx-3 my-2 w-full text-gray-300 bg-[#A3F7BF] text-center">Contact</a>
     </div>
   </div>
             </div>
