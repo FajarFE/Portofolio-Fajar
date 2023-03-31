@@ -37,7 +37,7 @@ const DetailedSkillCard = ({ selectedSkill }) => {
                   <img className="p-1" src={skill.logos[index]}alt=""/>
                   </div>
                   </Tilt>
-                  <h1 className="w-[40%] text-white font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[20px]">{name}</h1>
+                  <h1 className="w-[40%] text-white font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[20px] text-center">{name}</h1>
                   <div className="w-[60%] relative h-4 px-4">
                     <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
                       <animated.span
