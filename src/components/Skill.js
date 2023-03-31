@@ -31,13 +31,13 @@ const DetailedSkillCard = ({ selectedSkill }) => {
             <div className="w-full ">
               <div>
                  {skill.name.map((name, index,logos) => (
-                <div className="flex items-center mb-2" key={`skill-${index}`}>
+                <div className="flex items-center my-4" key={`skill-${index}`}>
                   <Tilt className="tilt" options={{ max: 50 }}>
-                  <div className="w-[25px] sm:w-[20px] md:w-[50px] lg:w-[70px] mr-[10px] bg-white rounded-full">
+                  <div className="w-[30px] sm:w-[30px] md:w-[50px] lg:w-[50px] mr-[20px] bg-white rounded-full">
                   <img className="p-1" src={skill.logos[index]}alt=""/>
                   </div>
                   </Tilt>
-                  <h1 className="w-[40%] text-white font-bold text-[16px] sm:text-[10px] md:text-[20px] lg:text-[20px]">{name}</h1>
+                  <h1 className="w-[40%] text-white font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[20px]">{name}</h1>
                   <div className="w-[60%] relative h-4 px-4">
                     <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
                       <animated.span
