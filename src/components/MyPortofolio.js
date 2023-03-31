@@ -40,7 +40,7 @@ const MyPortfolio = () => {
 
   return (
     <div className="container mx-auto pt-14">
-      <h1 className={`${styles.sectionHeadText} text-center`}>My Portfolio</h1>
+      <h1 className={` tracking-widest ${styles.sectionHeadText} text-center`}>My Portfolio</h1>
       <div className="flex space-x-4 my-10 justify-center ">
         <button
           className={`border border-[#A3F7BF] rounded text-[10px] xs:text-[5px] sm:text-[5px]  md:text-sm lg:text-sm py-2 px-4 ${
