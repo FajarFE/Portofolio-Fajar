@@ -32,15 +32,15 @@ const Footer = () =>{
 
 
             <div className="flex container justify-end"> 
-            <a href="" ><img className="mr-6" src={facebook} alt="" style={{width:"25px",color:"white"}} /></a>
+            <a href="https://www.facebook.com/fajar.fernandi.9" ><img className="mr-6" src={facebook} alt="" style={{width:"25px",color:"white"}} /></a>
             
-            <a href="" ><img className="mr-6" src={twitter} alt="" style={{width:"25px",color:"white"}} /></a>
+            <a href="https://twitter.com/FajarFernandi2" ><img className="mr-6" src={twitter} alt="" style={{width:"25px",color:"white"}} /></a>
              
             
-            <a href="" ><img className="mr-6" src={instagram} alt="" style={{width:"25px",color:"white"}} /></a>
+            <a href="https://www.instagram.com/faj_fer/" ><img className="mr-6" src={instagram} alt="" style={{width:"25px",color:"white"}} /></a>
              
             
-            <a href="" ><img className="p-1" src={linkedin} alt="" style={{width:"25px",color:"white"}} /></a>
+            <a href="https://www.linkedin.com/in/fajar-fernandi-96a569161/" ><img className="p-1" src={linkedin} alt="" style={{width:"25px",color:"white"}} /></a>
              
             </div>
           

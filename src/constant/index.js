@@ -21,14 +21,22 @@ import {  header,
     mysql,
     coreldraw,
     photoshop,
-    portofolio1,} from "../assets/index";
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+    portofolio1,
+    vue,
+    } from "../assets/index";
 
  import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGraduationCap,faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faGithub,faCodepen } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faGraduationCap,faBriefcase);
+library.add(faGraduationCap,faBriefcase,faGithub,faCodepen);
 
+
+export const Typed =[
+    {
+        title:["Web Developer","Front End Developer","Back End Developer"]
+    }
+]
 
 export const navLink =[
     {
@@ -65,9 +73,12 @@ const About = [
 }
 ];
 
-const skillBars = [  {    id: "01.",    title: "Front End Developer",    name: ["CSS", "GIT", "HTML", "JAVASCRIPT", "REACTJS", "TAILWIND"],
-    logos: [css, git, html, javascript, reactjs, tailwind],
-    percent: [80, 80, 80, 80, 80, 80],
+const skillBars = [  
+    {    
+    id: "01.",    title: "Front End Developer",    
+    name: ["CSS", "GIT", "VUE", "JAVASCRIPT", "REACTJS", "TAILWIND","BOOTSTRAP"],
+    logos: [css, git, vue, javascript, reactjs, tailwind, boostrap],
+    percent: [90,75,40,80,70,80,80],
   },
   {
     id: "02.",
@@ -90,7 +101,7 @@ const Skills = [
     {
       id: "01.",
       title: "Front End Developer",
-      logos: [css, git, html, javascript, reactjs, tailwind,boostrap],
+      logos: [css, git, vue, javascript, reactjs, tailwind,boostrap],
     },
     {
       id: "02.",
@@ -148,6 +159,7 @@ const Skills = [
   const Portfolio = [
     {
         id: "1",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -156,6 +168,7 @@ const Skills = [
     },
     {
         id: "2",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -164,6 +177,7 @@ const Skills = [
     },
     {
         id: "1",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -172,6 +186,7 @@ const Skills = [
     },
     {
         id: "1",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -180,6 +195,7 @@ const Skills = [
     },
     {
         id: "1",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -188,6 +204,7 @@ const Skills = [
     },
     {
         id: "1",
+        logo:[github,reactjs,figma,tailwind,],
         title: "Portofolio Website",
         tech:["reactjs", "tailwind", "figma"],
         description:"Portofolio Website ini dibuat dengan menggunakan Reactjs dan Tailwindcss. Saya membuat desainnya menggunakan Figma",
@@ -196,4 +213,4 @@ const Skills = [
     },
   ]
   
-export {About, Skills, experiences,timelines, Portfolio,skillBars};
+export {About, Skills, experiences,timelines, Portfolio,skillBars,faGithub,faCodepen};

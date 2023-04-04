@@ -15,6 +15,7 @@ import redux from "./frontend/redux.svg";
 import tailwind from "./frontend/tailwind.png";
 import github from "./github.png";
 import boostrap from "./frontend/BootStrap.svg";
+import vue from "./frontend/vue.svg";
 
 import mongodb from "./backend/mongodb.svg";
 import express from "./backend/express.svg";
@@ -55,4 +56,5 @@ export {
   photoshop,
   portofolio1,
   arrowright,
+  vue,
 };

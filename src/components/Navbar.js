@@ -99,8 +99,8 @@ const Navbar = () => {
                 
                 </div>
             </div>
-            <div className={`sm:hidden backdrop-blur-sm ${showMenu?"active" : "inactive"}`}>
-    <div className={`space-y-1 px-2 pt-2 pb-3`}>
+            <div className={`sm:hidden backdrop-blur-sm  ${showMenu?"active" : "inactive"}`}>
+    <div className={`space-y-1 px-2 pt-2 pb-3 max-h-screen max-h-full`}>
       <a href="/" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
 
       <a href="#" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">About</a>
@@ -109,7 +109,10 @@ const Navbar = () => {
 
       <a href="#timeline" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Timeline</a>
       <a href="#portofolio" className="text-gray-300 hover:font-bold hover:text-white block rounded-md px-3 py-2 text-base font-medium">Portofolio</a>
-      <a href="#contact" className="mx-3 my-2 w-full text-gray-300 bg-[#A3F7BF] text-center">Contact</a>
+      <div className="flex justify-center ">
+      <a href="#contact" className=" px-3 py-2 bg-[#A3F7BF] w-[50%] text-[#1B2430] rounded-md text-md text-center">Contact</a>
+      </div>
+      
     </div>
   </div>
             </div>

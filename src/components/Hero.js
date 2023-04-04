@@ -2,23 +2,38 @@ import React from "react";
 import colors from "tailwindcss/colors";
 import { photoshop,html,javascript,reactjs,header,instagram,facebook,twitter,linkedin,tailwind } from "../assets/index";
 import { styles } from "../styles";
+import { Typed } from "../constant";
+import rotate from "typed.js";
 
 
 
 
 const Hero =()=>{
+    const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new rotate(el.current, {
+      strings: Typed[0].title,
+      typeSpeed: 50,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
     return(
         <div className="container mx-auto overflow-hidden md:container md:mx-auto pt-20 ">
             <div className="flex grid grid-cols-2 content-center sm:mx-5  justify-center lg:text-left text-center sm:text-lg">
                 <div className="sm:px-2 px-2 py-20 items-center xs:text-[20]">
                 <h5 className={` font-bold leading-tight text-white ${styles.heroHeadText}`}>I’m Fajar Fernandi A<br/>
-                <span className="text-[#A3F7BF]">Programer</span> In <br/>Indonesia</h5>
+                <span className="text-[#A3F7BF] text-[65px] "> <span ref={el} /> </span> <br/> In Indonesia</h5>
                 <div className="flex justify-center lg:justify-start my-4 items-center ">
                       <a href="#contact" class="bg-[#A3F7BF] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#6cff9d] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#A3F7BF] rounded-md ">Hire Me</a>
-                      <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={facebook} alt="" style={{height:"25px",color:"white"}} /></a>
-                      <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={twitter} alt="" style={{height:"25px",color:"white"}} /></a>
-                      <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={instagram} alt="" style={{height:"25px",color:"white"}} /></a>
-                      <a href="" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={linkedin} alt="" style={{height:"25px",color:"white"}} /></a>
+                      <a href="https://www.facebook.com/fajar.fernandi.9" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={facebook} alt="" style={{height:"25px",color:"white"}} /></a>
+                      <a href="https://twitter.com/FajarFernandi2" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={twitter} alt="" style={{height:"25px",color:"white"}} /></a>
+                      <a href="https://www.instagram.com/faj_fer/" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={instagram} alt="" style={{height:"25px",color:"white"}} /></a>
+                      <a href="https://www.linkedin.com/in/fajar-fernandi-96a569161/" ><img className="px-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110" src={linkedin} alt="" style={{height:"25px",color:"white"}} /></a>
                 </div>
                 </div>
                 <div className=" hidden sm:block md:block py-24 box-content h-96 w-auto " >

@@ -8,13 +8,26 @@ import {textVariant,slideIn,fadeIn} from "../utils/motion";
 import { useSpring, animated } from "react-spring";
 import {Tilt} from 'react-tilt';
 
-const DetailedSkillCard = ({ selectedSkill }) => {
-  const skill = skillBars.find((s) => s.id === selectedSkill.id);
+const Progress = ({ percent }) => {
   const progressStyles = useSpring({
     from: { width: "0%" },
-    to: { width: `${skill?.percent[0]}%` },
+    to: { width: `${percent}%` },
     config: { duration: 1500 },
   });
+  return (
+    <div className="w-[60%] relative h-4 px-4">
+    <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
+      <animated.span
+        className="absolute top-0 left-0 h-full bg-[#A3F7BF] rounded-full"
+        style={progressStyles}
+      />
+    </div>
+  </div>
+  );
+}
+
+const DetailedSkillCard = ({ selectedSkill }) => {
+  const skill = skillBars.find((s) => s.id === selectedSkill.id);
   return (
     <>
       <div className="container flex pt-[90px] justify-center">
@@ -38,20 +51,12 @@ const DetailedSkillCard = ({ selectedSkill }) => {
                   </div>
                   </Tilt>
                   <h1 className="w-[40%] text-white font-bold text-[14px] sm:text-[10px] md:text-[20px] lg:text-[20px] text-center">{name}</h1>
-                  <div className="w-[60%] relative h-4 px-4">
-                    <div className="absolute top-0 h-full w-full bg-[#74b48a] rounded-full">
-                      <animated.span
-                        className="absolute top-0 left-0 h-full bg-[#A3F7BF] rounded-full"
-                        style={progressStyles}
-                      />
-                      
-                    </div>
-                    
-                  </div>
+                  <Progress percent={skill.percent[index]} />
                   <div className="">
                     <p className="text-[#A3F7BF] ml-6 ">{skill.percent[index]}%</p>
                   </div>
                 </div>
+                
               ))}
               </div>
              
@@ -110,7 +115,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                 <div className="">
                 {isSelected ? (
                   <button
-                  className={`absolute flex items-center rounded-full justify-center ${
+                  className={`absolute flex items-center rounded-full justify-center ml-4 ${
                     isSelected ? "icon3 bg-[#A3F7BF]" : ""
                   }`}
                   style={{
@@ -144,7 +149,7 @@ const SkillCard = ({ skill, index, onSelectSkill, isSelected }) => {
                 </button>
                 ) : (
                   <button
-                    className={`absolute flex items-center rounded-full justify-center  ${
+                    className={`absolute flex items-center rounded-full justify-center  ml-4 ${
                       isSelected ? "" : "icon2"
                     }`}
                     style={{
