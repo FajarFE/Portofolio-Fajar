@@ -118,7 +118,7 @@ const Experience = () => {
 
       
       
-   __      {showTimeline1 &&(
+        {showTimeline1 &&(
         <div className='mt-5 flex flex-col'>
         <VerticalTimeline lineColor={'transparent'}>
           {timelines.map((timeline, index) => (
