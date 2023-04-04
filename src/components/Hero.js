@@ -14,7 +14,9 @@ const Hero =()=>{
   React.useEffect(() => {
     const typed = new rotate(el.current, {
       strings: Typed[0].title,
-      backSpeed: 70,
+      backDelay: 2000,
+      startDelay: 50,
+      backSpeed: 100,
       typeSpeed: 50,
       loop: true,
       loopCount: Infinity,
