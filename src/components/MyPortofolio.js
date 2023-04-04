@@ -148,7 +148,7 @@ leaveTo="opacity-0"
           leaveTo="opacity-0 scale-95"
         >
           <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl z-92">
-  <img src={selectedProject?.image} alt={selectedProject?.title} />
+        <img src={selectedProject?.image} alt={selectedProject?.title} />
   
   <Dialog.Title as="h3" className="text-[30px] leading-6 text-[#D8E9A8] my-4 flex justify-center text-uppercase  ">
     {selectedProject?.title}
@@ -213,8 +213,8 @@ leaveTo="opacity-0"
     </Dialog>
   </Transition>
 </div>
-</div>
 
+</div>
 );
 };
 
