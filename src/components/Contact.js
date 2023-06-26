@@ -3,16 +3,16 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 
 const ContactCard = () => {
-  const [toEmail, setToEmail] = useState(" ");
+  const [toEmail, setToEmail] = useState("fajarfernandi123123@gmail.com");
   const [ccEmail, setCCEmail] = useState(" ");
   const [subject, setSubject] = useState(" ");
   const [message, setMessage] = useState(" ");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let url = `mailto:${toEmail}`;
+    let url = `mailto:${toEmail}?`;
     if (ccEmail.trim() !== "") {
-      url += `?cc=${ccEmail}`;
+      url += `&cc=${ccEmail}`;
     }
     url += `&subject=${subject}&body=${message}`;
     window.location.href = url;
@@ -22,20 +22,6 @@ const ContactCard = () => {
   return (
     <div className="w-[70%] h-auto container justify-start flex flex-col" id="contact-button ">
      <form onSubmit={handleSubmit} className="flex  gap-4 flex-col container justify-start">
-        <label className="w-full flex-mx-auto justify-center my-2">
-          <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-white text-bold">
-            To Email
-          </span>
-          <input
-            value={toEmail}
-            onChange={(e) => setToEmail(e.target.value)}
-            required
-            type="email"
-            name="toEmail"
-            className="mt-1 px-3 pr-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
-            placeholder="Recipient's Email"
-          />
-        </label>
         <label className="w-full flex-mx-auto justify-center my-2">
           <span className="after:ml-0.5 block text-sm font-medium text-white">
             CC Email
