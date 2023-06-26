@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: 'poppins-light'; src: url('./assets/fonts/Poppins-Light.ttf') format('truetype'); }
+@font-face { font-family: 'poppins-bold'; src: url('./assets/fonts/Poppins-Black.ttf') format('truetype'); }
+
+root{
+  overflow: hidden; 
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family:'poppins-light';
+  background-color: #1B2430;
+}
+
+.hero-content{
+  margin-top:-130px;
+}
+
+.vertical-timeline::before {
+  border-right: 7px dashed #A3F7BF; /* warna hitam untuk garis putus-putus */
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.vertical-timeline-element-content {
+    box-shadow: none !important; /* Menghilangkan box-shadow dan menambahkan !important untuk mengatasi kekhususan CSS */
+    padding: 100px;
+  }
+  .vertical-timeline-element-icon{
+    top: 11px !important;
+    box-shadow: 0 0 0 4px #A3F7BF, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05) !important;
+  }
+  
+
+  @media (min-width: 1170px) {
+    .vertical-timeline--two-columns .vertical-timeline-element-icon {
+      width: 30px !important;
+      height: 30px !important;
+      left: 50% !important;
+      top:27px !important;
+      margin-left: -15px !important;
+    }.vertical-timeline-element-date{
+      top: 18px !important;
+    }
+  }
+  
+
+.icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 800px) { .text-5xl { font-size: 3rem; content-align: center; padding:4px;} 
+.grid-cols-2 { grid-template-columns: 1fr; } }
+
+.logo-1{
+  top: 400px;
+  right: 650px;
+}
+
+.logo-2{
+  top: 100px;
+  right: 280px;
+}
+
+.logo-3{
+  top: 190px;
+  right: 380px;
+  z-index: -20;
+}
+
+.background-blur-1{
+  top: 210px;
+  right: 360px;
+  height:200px;
+  width:200px;
+  filter: blur(70px);
+}
+.background-blur-2{
+  top: 320px;
+  right: 345px;
+  height:200px;
+  width:270px;
+  filter: blur(80px);
+}
+
+.background-outline-1{
+  top: 220px;
+  right: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.background-outline-2{
+  top: 150px;
+  right: 150px;
+  height: 300px;
+  width: 300px;
+}
+
+
+.active-button {
+    background-color: #A3F7BF;
+    border-radius:2px;
+    width: 200px;
+    box-shadow: 2px 0 15px #A3F7BF;
+  }
+  
+  .deactivate-button {
+    border: 1px solid #A3F7BF;
+    width: 200px;
+    color: #A3F7BF;
+  }
+
+  .active{
+    visibility: visible !important;
+  }
+
+  .inactive{
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  .logos-skill{
+    height: 20px;
+    width: 190px;
+    top: -60px;
+    left: 20px;
+  }
+  .logos-skill-porto{
+    height: 20px;
+    width: 190px;
+    top: px;
+    left: 20px;
+  }
+
+  .img-logos{
+    height: 30%;
+    width: 30%;
+  }
+
+  .logos-skill1{
+    height: 90px;
+    width: 55px;
+    left: 290px;
+    top: 5px;
+  }
+
+
+  .icon {
+    fill: #A3F7BF;
+    width: 30px;
+  }
+
+  .icon3 {
+    fill: #1B2430;
+    width: 30px;
+    box-shadow:2px 0 15px #A3F7BF;
+  }
+
+  .icon2{
+    border: 1px solid #A3F7BF;
+  }
+  
+  .button-skill1 {
+    height: 500px;
+    width: 49px;
+    left: 240px;
+    top: 30px;
+    border: 1px solid #A3F7BF;
+    color: #A3F7BF;
+  }
+
+  .my-portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+  }
+  
+  .my-portfolio-card__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .my-portfolio-card__tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .my-portfolio-card__tech-item {
+    background-color: #eee;
+    color: #333;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .my-portfolio-card__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .my-portfolio-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 8px;
+  }
+  
+  .my-portfolio-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .my-portfolio-card__tag {
+    background-color: #333;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  
+  
