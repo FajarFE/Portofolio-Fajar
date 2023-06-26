@@ -22,8 +22,8 @@ const ContactCard = () => {
   return (
     <div className="w-[70%] h-auto container justify-start flex flex-col" id="contact-button ">
      <form onSubmit={handleSubmit} className="flex  gap-4 flex-col container justify-start">
-        <label className="w-full flex-mx-auto justify-center my-2">
-          <span className="after:ml-0.5 block text-sm font-medium text-white">
+        <label className="w-full flex-mx-auto gap-2 justify-center my-2">
+          <span className="after:ml-0.5  after:content-['(Opsional)'] block text-sm font-medium text-white">
             CC Email
           </span>
           <input
