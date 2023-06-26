@@ -71,7 +71,7 @@ const About = [
     id:"1",
     images:profile,
     isi:"I am a person who has always been passionate about the frontend. With my design and programming skills, I love delivering an engaging and intuitive user experience. I am constantly learning the latest technology and trying to improve the quality of display and interaction in the user interface. With my enthusiasm for the frontend, I was determined to create a stunning and engaging online experience for users.",
-    file:"https://drive.google.com/u/0/uc?id=1HlKzGmMtCZMKbTmhA_VRAzUIIR7sav9X&export=download"
+    file:"https://drive.google.com/u/0/uc?id=14n8FSas1wOCFiADiXawXtNzTI9Ld4-DP&export=download"
 }
 ];
 
