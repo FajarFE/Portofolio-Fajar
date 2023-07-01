@@ -95,7 +95,7 @@ const MyPortfolio = (index) => {
                 whileHover="hover"
               />
             </Tilt>
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 flex-wrap  justify-center">
               {project.tech.map((t) => (
                 <h5 key={t} className="text-white text-sm">
                 {t}
@@ -103,7 +103,7 @@ const MyPortfolio = (index) => {
 
 ))}
 </div>
-            <div className=" text-[#D8E9A8] text-[22px]">
+            <div className=" text-[#D8E9A8] text-[22px] flex justify-center ">
                 
                 <h1>{project.title}</h1>
             </div>
@@ -111,7 +111,7 @@ const MyPortfolio = (index) => {
 </div>
 ))}
 </div>
-<div className="overflow-hidden">
+<div className="overflow-hidden fixed inset-0 bg-black opacity-30 ">
 <Transition appear show={selectedProject !== null} as={React.Fragment}>
 <Dialog
        as="div"
@@ -119,7 +119,7 @@ const MyPortfolio = (index) => {
        onClose={closeModal}
        
      >
-<div className="min-h-screen px-4 text-center">
+<div className="min-h-screen  px-4 text-center ">
 <Transition.Child
 as={React.Fragment}
 enter="ease-out duration-300"
@@ -129,7 +129,7 @@ leave="ease-in duration-200"
 leaveFrom="opacity-100"
 leaveTo="opacity-0"
 >
-<Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+<Dialog.Overlay className="fixed inset-0  opacity-30" />
 </Transition.Child>
         {/* This element is to trick the browser into centering the modal contents. */}
         <span
@@ -147,63 +147,62 @@ leaveTo="opacity-0"
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl z-92">
+          <div className="inline-block w-full max-w-lg  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl">
         <img src={selectedProject?.image} alt={selectedProject?.title} />
   
   <Dialog.Title as="h3" className="text-[30px] leading-6 text-[#D8E9A8] my-4 flex justify-center text-uppercase  ">
     {selectedProject?.title}
   </Dialog.Title>
- <div className="relative flex justify-between items-center content-center w-full py-1">
-        <div className="flex justify-start flex  ">
-    {selectedProject?.logo.map((logo,logoIndex) => (
-      <img className=" border-4 border-[#A3F7BF]  bg-[#1B2430] rounded-full mr-2 p-1 " 
-       style={{
+<div className="relative flex flex-wrap justify-start items-center content-center w-full py-1">
+  {selectedProject?.logo.map((logo, logoIndex) => (
+    <img
+      className="border-4 border-[#A3F7BF] bg-[#1B2430] rounded-full mr-2 p-1"
+      style={{
         zIndex: index + logoIndex + 1,
-        height: "auto",
+        height: "5%",
         maxWidth: "10%",
         maxHeight: "5%",
-        left: `${logoIndex * 35 - 20}px`,
+        marginBottom: "10px", // Menambahkan margin bawah agar gambar logo berjajar ke bawah
       }}
-      src={logo} />
-      
-       
-      ))}
-      </div>
-      </div> 
+      src={logo}
+    />
+  ))}
+</div> 
   
   <div className="mt-2">
     <Dialog.Description className="text-sm text-white">
       {selectedProject?.description}
     </Dialog.Description>
   </div>
-            <div className="mt-4 flex space-x-2">
-              {selectedProject?.tech.map((t) => (
-                <h5
-                  key={t}
-                  className="text-sm text-white border-[#A3F7BF] border border-2 rounded-md px-2 py-1"
-                >
-                  {t}
-                </h5>
-              ))}
-            </div>
+  <div className="mt-4 flex flex-wrap space-x-2">
+  {selectedProject?.tech.map((t) => (
+    <h5
+      key={t}
+      className="text-sm text-white border-[#A3F7BF] border border-2 my-2 rounded-md px-2 py-1"
+    >
+      {t}
+    </h5>
+  ))}
+</div>
+
             <div className="mt-4 flex justify-center">
               <a
-                href={selectedProject?.demoLink}
+                href={selectedProject?.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#A3F7BF] text-[#1B2430] font-bold py-2 px-4 rounded w-[100%] justify-center flex items-center"
               >
                 <FontAwesomeIcon icon={faGithub}  />
-                <p className="ml-4">Demo</p>
+                <p className="ml-4">Code</p>
               </a>
               <a
-                href={selectedProject?.codeLink}
+                href={selectedProject?.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-[#A3F7BF] border text-white border-[2px] font-bold py-2 px-4 rounded ml-4 w-[100%] hover:bg-[#A3F7BF] justify-center flex items-center hover:text-[#1B2430]"
               >
                 <FontAwesomeIcon icon={faCodepen}  />
-                <p className="ml-4">Code</p>
+                <p className="ml-4">Demo</p>
                 
               </a>
             </div>
