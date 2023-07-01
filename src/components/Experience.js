@@ -6,11 +6,12 @@ import {
 import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
-import { experiences } from "../constant";
+import { sertif } from "../constant";
 import { timelines } from "../constant";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { tailwind } from "../assets";
+import { Tilt } from "react-tilt";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ExperienceCard = ({ experience }) => {
@@ -98,12 +99,12 @@ const Experience = () => {
         )}
         {showTimeline2 &&(
           <h2 className={`${styles.sectionHeadText2} text-center`}>
-          Experience.
+          Certificate
         </h2>
         )}
          <div className="flex justify-center pt-8">
       <button className={`mx-4 p-1 rounded-md  ${activeButton ? "deactivate-button" : "active-button text-[#1B2430] font-bold scale-105"}`} onClick={handleClick2} onChange={activeButton}>
-      Experience
+      Certificate
       </button>
       <button className={`mx-4 p-1 rounded-md ${activeButton ? "active-button text-[#1B2430] font-bold scale-105" : "deactivate-button"}`} onClick={handleClick1}>
       My Journey
@@ -130,22 +131,40 @@ const Experience = () => {
         </VerticalTimeline>
       </div>
       )}
-      {showTimeline2 &&(
-        <div className='mt-5 flex flex-col'>
-        <VerticalTimeline lineColor={'transparent'}>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
+    {showTimeline2 && (
+  <div className='mt-5 flex grid grid-cols-12'>
+    {sertif.map((item, index) => (
+      <div key={index} className="p-2.5 rounded-[20px] col-span-3">
+        <Tilt
+          className="tilt"
+          options={{
+            max: 10,
+            perspective: 1000,
+            scale: 1.02,
+            speed: 400,
+          }}
+        >
+          <a href={`https://drive.google.com/u/0/uc?id=${item.url}&export=download`} target="_blank" rel="noopener noreferrer">
+            <motion.img
+              src={`https://drive.google.com/uc?export=view&id=${item.url}`}
+              alt={item.title}
+              className="mb-2 cursor-pointer w-[400px] h-[200px] rounded-[20px]"
+              variants={textVariant}
+              whileHover="hover"
             />
-          ))}
-        </VerticalTimeline>
+          </a>
+        </Tilt>
+        <div className="text-[#D8E9A8] flex justify-center items-center text-[22px]">
+          <h1>{item.title}</h1>
+        </div>
       </div>
-      )}
-    </div>
-     
+    ))}
+  </div>
+)}
+
+
       
-      
+      </div>
     </>
   );
 };

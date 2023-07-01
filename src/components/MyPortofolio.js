@@ -40,7 +40,7 @@ const MyPortfolio = (index) => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto z-[999] ">
       <h1 className={` tracking-wider ${styles.sectionHeadText} text-center`}>My Portfolio</h1>
       <div className="flex space-x-4 my-5 justify-center ">
         <button
@@ -111,15 +111,15 @@ const MyPortfolio = (index) => {
 </div>
 ))}
 </div>
-<div className="overflow-hidden fixed inset-0 bg-black opacity-30 ">
-<Transition appear show={selectedProject !== null} as={React.Fragment}>
+<div className="overflow-hidden z-50">
+<Transition className="fixed inset-0 " appear show={selectedProject !== null} as={React.Fragment}>
 <Dialog
        as="div"
-       className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-sm"
+       className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-sm "
        onClose={closeModal}
        
      >
-<div className="min-h-screen  px-4 text-center ">
+<div className="min-h-screen  px-4 text-center  z-99">
 <Transition.Child
 as={React.Fragment}
 enter="ease-out duration-300"
@@ -147,20 +147,20 @@ leaveTo="opacity-0"
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="inline-block w-full max-w-lg  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl">
+          <div className="inline-block w-full max-w-[800px]  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl">
         <img src={selectedProject?.image} alt={selectedProject?.title} />
   
   <Dialog.Title as="h3" className="text-[30px] leading-6 text-[#D8E9A8] my-4 flex justify-center text-uppercase  ">
     {selectedProject?.title}
   </Dialog.Title>
-<div className="relative flex flex-wrap justify-start items-center content-center w-full py-1">
+<div className="relative flex flex-wrap justify-center items-center content-center w-full py-1">
   {selectedProject?.logo.map((logo, logoIndex) => (
     <img
       className="border-4 border-[#A3F7BF] bg-[#1B2430] rounded-full mr-2 p-1"
       style={{
         zIndex: index + logoIndex + 1,
         height: "5%",
-        maxWidth: "10%",
+        maxWidth: "7%",
         maxHeight: "5%",
         marginBottom: "10px", // Menambahkan margin bawah agar gambar logo berjajar ke bawah
       }}
@@ -169,12 +169,11 @@ leaveTo="opacity-0"
   ))}
 </div> 
   
-  <div className="mt-2">
-    <Dialog.Description className="text-sm text-white">
-      {selectedProject?.description}
-    </Dialog.Description>
+  <div className="mt-2 ">
+  <Dialog.Description className="text-sm text-white " dangerouslySetInnerHTML={{ __html: selectedProject?.description.replace(/\n\n/g, "<br/>") }} />
+
   </div>
-  <div className="mt-4 flex flex-wrap space-x-2">
+  <div className="mt-4 flex flex-wrap space-x-2 flex justify-center">
   {selectedProject?.tech.map((t) => (
     <h5
       key={t}

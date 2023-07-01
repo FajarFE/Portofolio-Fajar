@@ -39,7 +39,7 @@ const Navbar = () => {
     ));
   }
     return (
-    <nav className={`z-50 fixed w-full py-2 transition-all duration-300 ${navbar ? "backdrop-blur-sm bg-[#1B2430]opacity-10" : "backdrop-blur-sm"}`}>
+    <nav className={`z-10 fixed w-full py-2 transition-all duration-300 ${navbar ? "backdrop-blur-sm" : "backdrop-blur-sm "}`}>
             <div className="mx-auto container ">
             <div className="relative flex h-20 items-center justify-between text-center">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">

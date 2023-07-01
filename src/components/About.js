@@ -154,8 +154,8 @@ const  AboutPage=()=> {
                 </div>
             </div>
             <div className="col-span-12 lg:col-span-6 lg:px-10 px-2 flex gap-6 flex-col justify-center lg:justify-between items-center lg:items-start w-full">
-              <p className="md:text-[20px] text-sm w-full text-white break-words text-[20px] ">
-              {item.isi}
+              <p className="md:text-[20px] text-sm w-full text-white break-words text-[20px] "  dangerouslySetInnerHTML={{ __html: item.isi.replace(/\n\n/g, "<br/>") }}>
+           
               </p>
             <a className="flex justify-center w-[180px] h-10 rounded-md bg-[#A3F7BF] items-center" href={item.file}> <svg fill="#000000" width="30px" height="30px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
 <title>clip</title>
