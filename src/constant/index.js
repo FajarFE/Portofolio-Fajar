@@ -160,6 +160,11 @@ const Skills = [
       id: "7",
       title: "Certification of Daily Management, HMP Informatika, Academic Year 2020-2021",
       url: "1TwAxvnINjDecZxAxrVBqyus0GmYvhyfG"
+    },
+    {
+      id: "8",
+      title: "Certification of Training of Communicator",
+      url: "1D7N9gZM2MIIS8N9kRH6wZJWo4v7eAYFM"
     }
   ];
   
