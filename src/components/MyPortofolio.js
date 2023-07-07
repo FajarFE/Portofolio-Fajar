@@ -8,12 +8,18 @@ import { Portfolio,faGithub,faCodepen } from '../constant';
 import { styles } from "../styles";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+
 // Import modals from @tailwindcss/ui
 import { Dialog, Transition } from "@headlessui/react";
 
 const MyPortfolio = (index) => {
   const [selectedTags, setSelectedTags] = useState([]);
   const [selectedProject, setSelectedProject] = useState(null); // State untuk menyimpan proyek yang dipilih
+  const [closed,setClosed] = useState(false);
+
+  const handleClosed = () => {
+    setClosed(true);
+  }
 
   const handleTagClick = (tag) => {
     if (selectedTags.includes(tag)) {
@@ -118,7 +124,7 @@ const MyPortfolio = (index) => {
        className="fixed inset-0 z-10 overflow-y-auto backdrop-blur-sm "
        onClose={closeModal}
        
-     >
+     > 
 <div className="min-h-screen  px-4 text-center  z-99">
 <Transition.Child
 as={React.Fragment}
@@ -129,7 +135,9 @@ leave="ease-in duration-200"
 leaveFrom="opacity-100"
 leaveTo="opacity-0"
 >
+
 <Dialog.Overlay className="fixed inset-0  opacity-30" />
+
 </Transition.Child>
         {/* This element is to trick the browser into centering the modal contents. */}
         <span
@@ -148,6 +156,7 @@ leaveTo="opacity-0"
           leaveTo="opacity-0 scale-95"
         >
           <div className="inline-block w-full max-w-[800px]  p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-[#1B2430] shadow-xl rounded-2xl">
+            <button className="focus:outline-none" onClick={closeModal}><svg className="w-[20px] h-[20px] lg:h-[30px] my-2 lg:w-[30px]" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"/></svg></button>
         <img src={selectedProject?.image} alt={selectedProject?.title} />
   
   <Dialog.Title as="h3" className="text-[30px] leading-6 text-[#D8E9A8] my-4 flex justify-center text-uppercase  ">
@@ -156,16 +165,16 @@ leaveTo="opacity-0"
 <div className="relative flex flex-wrap justify-center items-center content-center w-full py-1">
   {selectedProject?.logo.map((logo, logoIndex) => (
     <img
-      className="border-4 border-[#A3F7BF] bg-[#1B2430] rounded-full mr-2 p-1"
-      style={{
-        zIndex: index + logoIndex + 1,
-        height: "5%",
-        maxWidth: "7%",
-        maxHeight: "5%",
-        marginBottom: "10px", // Menambahkan margin bawah agar gambar logo berjajar ke bawah
-      }}
-      src={logo}
-    />
+    className="border-4 border-[#A3F7BF] bg-[#1B2430] rounded-full mr-2 p-1  lg:w-[7%]"
+    style={{
+      zIndex: index + logoIndex + 1,
+      height: "5%",
+      maxWidth: "12%",
+      maxHeight: "5%",
+      marginBottom: "10px",
+    }}
+    src={logo}
+  />
   ))}
 </div> 
   
