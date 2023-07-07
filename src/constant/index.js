@@ -163,7 +163,7 @@ const Skills = [
     },
     {
       id: "8",
-      title: "Certification of Training of Communicator",
+      title: "Certification Training of Communicator",
       url: "1D7N9gZM2MIIS8N9kRH6wZJWo4v7eAYFM"
     }
   ];
