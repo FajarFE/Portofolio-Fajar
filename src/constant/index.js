@@ -220,7 +220,7 @@ const Skills = [
         image: [arfixcode],
         tags: ["Front End", "Back End"],
         demoLink: "http://arfix-code.my.id/",
-        codeLink: "https://github.com/FajarFE/ARFIX-CODE",
+        codeLink: "https://github.com/FajarFE/arfix-code.my.id",
     },
 ]
 
